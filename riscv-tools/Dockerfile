@@ -1,5 +1,7 @@
-FROM yangby0cryptape/riscv-gnu-toolchain:rv64imc-newlib-20190414 AS builder
+FROM yangby0cryptape/riscv-gnu-toolchain:rv64imac-newlib-20190829 AS builder
 MAINTAINER Boyu Yang <yangby@cryptape.com>
+
+ENV REVISION="26190623292f82a0f001bdcba40cfa98786e8819"
 
 # Install system packages
 RUN set -eux; \
@@ -18,9 +20,12 @@ RUN set -eux; \
 
 # Fetch source code of riscv tools
 RUN set -eux; \
-    git clone --depth=1 --branch=master --single-branch \
-    https://github.com/riscv/riscv-tools.git \
-    /usr/src/riscv-tools;
+    mkdir -p /usr/src/riscv-tools; \
+    cd /usr/src/riscv-tools; \
+    git init .; \
+    git remote add origin https://github.com/riscv/riscv-tools.git; \
+    git fetch origin --depth=1 "${REVISION}"; \
+    git reset --hard FETCH_HEAD
 
 # Sync submodules
 RUN set -eux; \
