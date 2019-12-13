@@ -1,4 +1,4 @@
-FROM yangby0cryptape/riscv-gnu-toolchain:rv64imac-newlib-20190829 AS builder
+FROM yangby0cryptape/riscv-gnu-toolchain:rv64imac-newlib-20191214 AS builder
 MAINTAINER Boyu Yang <yangby@cryptape.com>
 
 ENV REVISION="26190623292f82a0f001bdcba40cfa98786e8819"
