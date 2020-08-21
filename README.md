@@ -12,13 +12,13 @@ Registry.
 [RISC-V GNU Compiler Toolchain] is the RISC-V C and C++ cross-compiler.
 
 Supported tags and respective `Dockerfile` links:
-  - [`rv64imac-newlib-20191214`]
+  - [`rv64imac-newlib-20200821`]
 
 Start the docker as follows:
 
 ```bash
 docker run --rm -it \
-    yangby0cryptape/riscv-gnu-toolchain:rv64imac-newlib-20191214 \
+    yangby0cryptape/riscv-gnu-toolchain:rv64imac-newlib-20200821 \
     /bin/bash
 ```
 
@@ -28,13 +28,13 @@ docker run --rm -it \
 (include [RISC-V GNU Compiler Toolchain]).
 
 Supported tags and respective `Dockerfile` links:
-  - [`rv64imac-newlib-20191214`]
+  - [`rv64imac-newlib-20200821`]
 
 Start the docker as follows:
 
 ```bash
 docker run --rm -it \
-    yangby0cryptape/riscv-tools:rv64imac-newlib-20191214 \
+    yangby0cryptape/riscv-tools:rv64imac-newlib-20200821 \
     /bin/bash
 ```
 
@@ -44,7 +44,7 @@ Start the `riscv-tools` docker:
 
 ```bash
 docker run --rm -it \
-    yangby0cryptape/riscv-tools:rv64imac-newlib-20191214 \
+    yangby0cryptape/riscv-tools:rv64imac-newlib-20200821 \
     /bin/bash
 ```
 
@@ -72,5 +72,5 @@ Last, enjoy it!
 [RISC-V GNU Compiler Toolchain]: https://github.com/riscv/riscv-gnu-toolchain
 [RISC-V Tools]: https://github.com/riscv/riscv-tools
 [my-docker-hub-url]: https://hub.docker.com/u/yangby0cryptape/
-[`rv64imac-newlib-20191214`]: riscv-gnu-toolchain
-[`rv64imac-newlib-20191214`]: riscv-tools
+[`rv64imac-newlib-20200821`]: riscv-gnu-toolchain
+[`rv64imac-newlib-20200821`]: riscv-tools

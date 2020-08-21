@@ -2,7 +2,7 @@ FROM ubuntu:bionic AS builder
 MAINTAINER Boyu Yang <yangby@cryptape.com>
 
 ENV RISCV_ARCH="rv64imac"
-ENV REVISION="04d02db09905d5bb52eb77c1c2047d2318c4bbbb"
+ENV REVISION="aba677ba6e967eae84773a1dc85a77ce44d65d26"
 
 # The install-prefix for executable files
 ENV RISCV="/opt/riscv"
